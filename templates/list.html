@@ -1,0 +1,38 @@
+$def with (grades) 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+function del(gradeId){
+	url='/del/'+gradeId;
+	window.location.href=url;
+}
+function edit(gradeId){
+	url='/edit/'+gradeId;
+	window.location.href=url;
+}
+</script>
+</head>
+<body>
+<h2>grades</h2> <hr/>
+<a href="/add">add</a><hr/>
+<table border="1">
+	<tr>
+		<td> </td>
+		<td>id</td>
+		<td>name</td>
+		<td>value</td>
+	</tr>
+$for g in grades:
+	<tr>
+		<td>
+			<input type="button" value="delete" onclick="del('$g.id')" >
+			<input type="button" value="update" onclick="edit('$g.id')" >
+		</td>
+		<td>$g.id</td>
+		<td>$g.name</td>
+		<td>$g.value</td>
+	</tr>
+</table>
+</body>
+</html>

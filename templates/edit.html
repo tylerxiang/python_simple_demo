@@ -1,0 +1,20 @@
+$def with (grade) 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+</script>
+</head>
+<body>
+<h2>update</h2> <hr/>
+<h3>
+<form action="/editSave" method="post">
+	<input type="hidden" name="gradeId" value="$grade.id">
+	id:$grade.id<br/>
+	name:<input name="gradeName" value="$grade.name"><br/>
+	value:<input name="gradeValue" value="$grade.value"><br/>
+	<input type="submit" value="save">
+</form>
+</h3>
+</body>
+</html>

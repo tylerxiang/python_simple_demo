@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grades>
+  <grade id="0101" name="aaa" value="88"/>
+  <grade id="0102" name="bb" value="77"/>
+  <grade id="0201" name="ccc" value="99"/>
+</grades>

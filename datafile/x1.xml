@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students>
+	<student id="0101" name="aaa" value="88" />
+	<student id="0102" name="bb"  value="77" />
+	<student id="0201" name="ccc" value="99" />
+	<student id="0202" name="ddd" value="66" />
+	
+</students>
